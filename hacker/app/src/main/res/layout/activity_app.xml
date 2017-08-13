@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.hacker.app"
+    android:background="@drawable/hgb"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+    <ListView
+        android:id="@+id/a_list"
+        android:layout_width="wrap_content"
+        android:layout_height="323dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+></ListView>
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:fontFamily="cursive"
+        android:text="Since it is a prototype app , only limited tutorials are displayed"
+        android:textSize="26sp"
+        android:layout_below="@+id/a_list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

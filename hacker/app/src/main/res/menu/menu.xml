@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/chat"
+        android:icon="@drawable/chat"
+        android:title=" Enter the chat room "
+        />
+    <item android:id="@+id/buddy"
+        android:title="Find a programming buddy"
+        android:icon="@drawable/buddy"
+        />
+    <item
+        android:id="@+id/help"
+        android:title="About"
+        android:icon="@drawable/help"
+
+        />
+
+</menu>

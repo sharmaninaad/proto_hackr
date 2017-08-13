@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.hacker.MainActivity"
+    android:background="@drawable/bgg"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/unnamed" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d78888"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:text="Find and Share the best Programming Tutorials" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:id="@+id/my_grid"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:visibility="visible"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Since it is a prototype app , tutorials are availbale in android section only.visit hackr.IO for more"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>
