@@ -22,7 +22,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import static android.R.attr.id;
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
+
 import static android.os.Build.VERSION_CODES.M;
 import static android.transition.Fade.IN;
 
