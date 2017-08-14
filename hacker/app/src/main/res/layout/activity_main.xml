@@ -16,18 +16,10 @@
         android:orientation="vertical">
 
 
-        <GridView
-            android:id="@+id/my_grid"
+        <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnWidth="100dp"
-            android:gravity="center"
-
-            android:numColumns="auto_fit"
-            android:visibility="visible"
-
-
-            />
+            android:layout_height="match_parent"
+            android:id="@+id/my_list"/>
 
         <TextView
             android:id="@+id/textView4"
@@ -37,6 +29,7 @@
             android:text="Since it is a prototype app , tutorials are availbale in android section only.visit hackr.IO for more"
             android:textColor="#ffffff"
             android:textSize="20sp" />
+
     </LinearLayout>
 
 </LinearLayout>

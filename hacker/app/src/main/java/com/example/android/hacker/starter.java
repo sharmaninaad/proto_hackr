@@ -20,9 +20,9 @@ public class starter extends Application{
 
         // Add your initialization code here
         Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
-                .applicationId("8b260cbb11b9d86b82cc8af7074bf5a9b775464c")
-                .clientKey("88be0047eda77b9182bb2bc720481e01e4804957")
-                .server("http://ec2-54-200-137-68.us-west-2.compute.amazonaws.com:80/parse/")
+                .applicationId("54c54cd0ca77ad57f0b1031ad2fd79bac4336fb9")
+                .clientKey("a058d00a5aaf5d81c923b237903dfe8eccbaf9d9")
+                .server("http://ec2-18-220-197-15.us-east-2.compute.amazonaws.com:80/parse")
                 .build()
         );
 
@@ -33,6 +33,7 @@ public class starter extends Application{
         defaultACL.setPublicReadAccess(true);
         defaultACL.setPublicWriteAccess(true);
         ParseACL.setDefaultACL(defaultACL, true);
+
 
     }
 

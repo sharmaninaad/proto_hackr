@@ -14,29 +14,25 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.parse.APPLICATION_ID"
-            android:value="ap" />
+            android:value="nothib" />
         <meta-data
             android:name="com.parse.CLIENT_KEY"
-            android:value="key" />
+            android:value="kkkkkk" />
 
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:name=".login"
+            android:label="programming tutorials">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".login"
-            android:label="f">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
-            <category android:name="android.intent.category.LAUNCHER" />
+            android:name=".MainActivity"
+            android:label="Tutorials"
+            />
 
-
-        </intent-filter>
-</activity>
     </application>
+
 </manifest>

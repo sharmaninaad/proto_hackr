@@ -17,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         SQLiteDatabase database=this.openOrCreateDatabase("favourites",MODE_PRIVATE,null);
-        GridView gridView=(GridView) findViewById(R.id.my_grid);
+        ListView listView=(ListView) findViewById(R.id.my_list);
 
        // ArrayList<String> topics=new ArrayList<>();
 
@@ -109,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
         };
 
+
         int images[]={
                 R.drawable.android1,
                 R.drawable.webd,
@@ -136,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
             GridAdapter gridAdapter = new GridAdapter(getApplicationContext(), images, topics);
 
 
-            gridView.setAdapter(gridAdapter);
-            gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            listView.setAdapter(gridAdapter);
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     switch (position) {

@@ -26,12 +26,12 @@
         android:textColor="#d78888"
         android:textSize="26dp"
         android:textStyle="bold"
-        android:layout_above="@+id/editText3"
+        android:layout_above="@+id/username"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="41dp" />
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#ffff"
@@ -45,14 +45,14 @@
          />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/username"
         android:layout_marginTop="32dp"
         android:textColor="#ffff"
         android:ems="10"
@@ -62,14 +62,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
+        android:layout_marginLeft="93dp"
+        android:layout_marginStart="93dp"
+        android:id="@+id/button"
+        android:text="Log in"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="79dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/button"
-        android:text="Log in"/>
+        android:layout_marginBottom="46dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -83,4 +83,37 @@
         android:layout_toEndOf="@+id/button"
         android:layout_marginLeft="41dp"
         android:layout_marginStart="41dp" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="enter your mail id"
+        android:textColorHint="#ffff"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="enter your country"
+        android:visibility="invisible"
+        android:textColorHint="#ffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
