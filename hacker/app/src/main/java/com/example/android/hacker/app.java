@@ -101,7 +101,7 @@ public class app extends AppCompatActivity {
 
         webView=new WebView(this);
 
-         listView1=(ListView)findViewById(R.id.a_list);
+        // listView1=(ListView)findViewById(R.id.a_list);
 
         listAdapter la=new listAdapter(activity,tutorials,payment,voting,vidd,"android");
 

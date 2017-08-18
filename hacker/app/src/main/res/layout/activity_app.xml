@@ -12,14 +12,7 @@
 
 
 
-    <ListView
-        android:id="@+id/a_list"
-        android:layout_width="wrap_content"
-        android:layout_height="323dp"
 
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-></ListView>
 
 
 
@@ -27,13 +20,21 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
         android:fontFamily="cursive"
         android:text="Since it is a prototype app , only limited tutorials are displayed"
         android:textSize="26sp"
-        android:layout_below="@+id/a_list"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp" />
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/a_list" />
 
 
 </RelativeLayout>
