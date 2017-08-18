@@ -14,6 +14,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -21,36 +22,75 @@ import android.widget.Toast;
 import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 //import static com.example.android.hacker.favourites.favs;
 
 
 public class app extends AppCompatActivity {
-    WebView webView;
-    final Activity activity = this;;
+    /*WebView webView;
+    final Activity activity = this;*/
 
-    WebView mWebview ;
+    /*WebView mWebview ;
     ListView listView1;
     ArrayList<String>tutorials;
     ArrayList<String> payment;
     ArrayList<String> voting;
-    ArrayList<String> vidd;
+    ArrayList<String> vidd;*/
+
     ArrayList<String> links;
 
-    ArrayList<String>linb;
+    /*ArrayList<String>linb;
     ArrayList<String> tutb;
     ArrayList<String> payb;
     ArrayList<String> votb;
     ArrayList<String> vidb;
-
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app);
 
+        List<String> category=new ArrayList<>();
+
+        HashMap<String,List<String>> tutors= new HashMap<>() ;
+
+        List<String> free=new ArrayList<>();
+        List<String> paid=new ArrayList<>();
+
+        free.add("Android App development by stanford");
+        free.add("Android Material Design Tutorial");
+        free.add("Tutorials about development for android");
+        free.add("Training for Android developers");
+
+        paid.add("udemy-the complete android n developer course");
+        paid.add("android naughat app masterclass");
+        paid.add("learn android development");
 
         links=new ArrayList<>();
-        tutorials=new ArrayList<>();
+
+        links.add("http://web.stanford.edu/class/cs193a/videos.shtml");
+        links.add ("https://www.youtube.com/playlist?list=PLonJJ3BVjZW6CtAMbJz1XD8ELUs1KXaTD");
+        links.add("http://www.vogella.com/tutorials/android.html");
+        links.add( "https://developer.android.com/training/index.html");
+        links.add("https://www.udemy.com/complete-android-n-developer-course/learn/v4/?siteID=jU79Zysihs4-wKAeEmL_pzRJcuUc.XhRxw&LSNPUBID=jU79Zysihs4");
+        links.add("https://www.udemy.com/master-android-7-nougat-java-app-development-step-by-step/?siteID=jU79Zysihs4-NOCYgdjOFu6MiiCB1iLB7g&LSNPUBID=jU79Zysihs4");
+        links.add("https://www.pluralsight.com/paths/android");
+
+        category.add("Free tutorials");
+        category.add("paid tutorial");
+
+        adapter adapt=new adapter(this,category,tutors);
+
+        tutors.put(category.get(0), free); // Header, Child data
+        tutors.put(category.get(1), paid);
+
+        ExpandableListView listView=(ExpandableListView)findViewById(R.id.items);
+        listView.setAdapter(adapt);
+        //tutors.put(listDataHeader.get(2), comingSoon);
+
+        /*tutorials=new ArrayList<>();
         payment=new ArrayList<>();
         voting=new ArrayList<>();
         vidd=new ArrayList<>();
@@ -63,11 +103,7 @@ public class app extends AppCompatActivity {
         vidb=new ArrayList<>();
 
 
-        links.add("http://web.stanford.edu/class/cs193a/videos.shtml");
-        links.add ("https://www.youtube.com/playlist?list=PLonJJ3BVjZW6CtAMbJz1XD8ELUs1KXaTD");
-        links.add("http://www.vogella.com/tutorials/android.html");
-        links.add( "https://developer.android.com/training/index.html");
-        links.add("https://www.udemy.com/complete-android-n-developer-course/learn/v4/?siteID=jU79Zysihs4-wKAeEmL_pzRJcuUc.XhRxw&LSNPUBID=jU79Zysihs4");
+
 
         tutorials.add("Android App development by stanford");
         tutorials.add("Android Material Design Tutorial");
@@ -95,8 +131,8 @@ public class app extends AppCompatActivity {
         vidd.add("Text");
         vidd.add("Video");
 
-
-
+*/
+/*
         mWebview  = new WebView(this);
 
         webView=new WebView(this);
@@ -125,7 +161,7 @@ public class app extends AppCompatActivity {
 
 
             }
-    });
+    });*/
     }
 
 }
